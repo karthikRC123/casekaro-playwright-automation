@@ -50,47 +50,64 @@ PLAYWRIGHT-AUTOMATION
 ```
 
 
-prerequisites
-For Normal Run
+## Prerequisites For Normal Run
 
-Java 17+
+- **Java 17+**
+- **Maven 3.8+**
+- **Chrome / Chromium browser**
 
-Maven 3.8+
+## Verify Installation
 
-Chrome / Chromium browser
-
-Verify:
-
+Check your installations:
+```bash
 java -version
 mvn -version
+```
 
-For Docker Run
-Verify:
+For Docker, verify:
+```bash
 docker --version
 docker-compose --version
+```
 
- Run Tests Normally (Local Machine)
-1️ Install Playwright Browsers (One Time Only)
-mvn exec:java "-Dexec.mainClass=com.microsoft.playwright.CLI" "-Dexec.args=install"
+## Run Tests Normally (Local Machine)
 
-2️ Run All Tests
+### 1. Install Playwright Browsers (One Time Only)
+```bash
+mvn exec:java -e -Dexec.mainClass=com.microsoft.playwright.CLI -Dexec.args="install"
+```
+
+### 2. Run All Tests
+```bash
 mvn test
+```
 
-3️ Run Using TestNG XML (Optional)
+### 3. Run Using TestNG XML (Optional)
+```bash
 mvn test -DsuiteXmlFile=testing.xml
+```
 
-4️  Test Reports
-target/surefire-reports/
+### 4. Test Reports
 
- Run Tests Using Docker (Recommended for CI/CD)
-1️ Build & Run
+Reports are generated at: `target/surefire-reports/`
+
+## Run Tests Using Docker (Recommended for CI/CD)
+
+### 1. Build & Run
+```bash
 docker-compose up --build
+```
 
-2️ Run Again (Without Rebuild)
+### 2. Run Again (Without Rebuild)
+```bash
 docker-compose up
+```
 
-3️ Stop Containers
+### 3. Stop Containers
+```bash
 docker-compose down
+```
 
-4️ Test Reports (Docker)
-target/surefire-reports/
+### 4. Test Reports (Docker)
+
+Reports are available at: `target/surefire-reports/`
