@@ -21,8 +21,8 @@ The automation simulates a real user journey:
 - **Version Control:** Git & GitHub  
 
 ---
-
-##  Project Structure
+## Project Structure
+```
 PLAYWRIGHT-AUTOMATION
 │
 ├── src
@@ -47,9 +47,10 @@ PLAYWRIGHT-AUTOMATION
 │
 ├── pom.xml
 └── README.md
+```
 
 
-rerequisites
+prerequisites
 For Normal Run
 
 Java 17+
