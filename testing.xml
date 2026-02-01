@@ -1,0 +1,7 @@
+<suite name="Casekaro">
+    <test name="addToCartTesting">
+    <classes>
+        <class name="Testing.java"/>
+    </classes>
+    </test>
+</suite>

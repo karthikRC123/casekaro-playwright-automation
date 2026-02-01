@@ -1,0 +1,11 @@
+version: "3.9"
+
+services:
+  playwright-tests:
+    container_name: casekaro-playwright
+    build: .
+    shm_size: 2gb
+    environment:
+      - JAVA_OPTS=-Xmx1024m
+    volumes:
+      - ./target:/app/target
