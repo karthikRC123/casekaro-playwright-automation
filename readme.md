@@ -26,21 +26,24 @@ The automation simulates a real user journey:
 PLAYWRIGHT-AUTOMATION
 │
 ├── src
-│ ├── main
-│ │ └── java
-│ │ ├── base
-│ │ │ └── BaseTest.java
-│ │ │
-│ │ └── pages
-│ │     ├── HomePage.java
-│ │ |   ├── SearchPage.java
-│ │ |   ├── ProductListing.java
-│ │ |   └── Cart.java
-│ │ |
-│   └── tests
-│       └── Testing.java
-│ 
-│ 
+│   ├── main
+│   │   ├── java
+│   │   │   ├── base
+│   │   │   │   └── BaseTest.java
+│   │   │   │
+│   │   │   ├── pages
+│   │   │   │   ├── HomePage.java
+│   │   │   │   ├── SearchPage.java
+│   │   │   │   ├── ProductListing.java
+│   │   │   │   └── Cart.java
+│   │   │   │
+│   │   │   └── tests
+│   │   │       └── Testing.java
+│   │   │
+│   │   └── resources
+│   │
+│   └── test
+│       └── java
 │
 ├── pom.xml
 └── README.md
